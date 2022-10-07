@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Slider from "react-slick";
-import { Button } from "antd";
+import Button from "@mui/material/Button";
 
 const style = {
   position: "absolute",
@@ -49,22 +49,21 @@ const SliderHome = (movie) => {
             and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.
           </p>
           <Button
-            style={{
-              textAlign: "center",
-              color: "white",
-              marginLeft: 30,
-              marginTop: 20,
-              fontSize: 10,
-              borderRadius: 20,
+            sx={{
+              marginTop: 5,
+              marginLeft: "30px",
+              width: "25ch",
+              borderRadius: "20px",
+              fontSize: 15,
             }}
-            type={"primary"}
-            danger
-            icon={<PlayCircleOutlined />}
+            variant="contained"
+            size="small"
             onClick={handleOpen}
-            id="slide1"
           >
+            <PlayCircleOutlined style={{ marginRight: "5px" }} />
             WATCH TRAILER
           </Button>
+
           <Modal
             aria-labelledby="transition-modal-title"
             open={open}
@@ -102,21 +101,21 @@ const SliderHome = (movie) => {
             only to discover just how messy the artistic process can be.
           </p>
           <Button
-            style={{
-              textAlign: "center",
-              color: "white",
-              marginLeft: 30,
-              marginTop: 20,
-              fontSize: 10,
-              borderRadius: 20,
+            sx={{
+              marginTop: 5,
+              marginLeft: "30px",
+              width: "25ch",
+              borderRadius: "20px",
+              fontSize: 15,
             }}
-            type={"primary"}
-            danger
-            icon={<PlayCircleOutlined />}
+            variant="contained"
+            size="small"
             onClick={handleOpen}
           >
+            <PlayCircleOutlined style={{ marginRight: "5px" }} />
             WATCH TRAILER
           </Button>
+
           {/* <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
@@ -157,21 +156,21 @@ const SliderHome = (movie) => {
             Gru hatches a plan to become evil enough to join them, with the backup of his followers, the Minions.
           </p>
           <Button
-            style={{
-              textAlign: "center",
-              color: "white",
-              marginLeft: 30,
-              marginTop: 20,
-              fontSize: 10,
-              borderRadius: 20,
+            sx={{
+              marginTop: 5,
+              marginLeft: "30px",
+              width: "25ch",
+              borderRadius: "20px",
+              fontSize: 15,
             }}
-            type={"primary"}
-            danger
-            icon={<PlayCircleOutlined />}
+            variant="contained"
+            size="small"
             onClick={handleOpen}
           >
+            <PlayCircleOutlined style={{ marginRight: "5px" }} />
             WATCH TRAILER
           </Button>
+
           {/* <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
@@ -211,21 +210,21 @@ const SliderHome = (movie) => {
             But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.
           </p>
           <Button
-            style={{
-              textAlign: "center",
-              color: "white",
-              marginLeft: 30,
-              marginTop: 20,
-              fontSize: 10,
-              borderRadius: 20,
+            sx={{
+              marginTop: 5,
+              marginLeft: "30px",
+              width: "25ch",
+              borderRadius: "20px",
+              fontSize: 15,
             }}
-            type={"primary"}
-            danger
-            icon={<PlayCircleOutlined />}
+            variant="contained"
+            size="small"
             onClick={handleOpen}
           >
+            <PlayCircleOutlined style={{ marginRight: "5px" }} />
             WATCH TRAILER
           </Button>
+
           {/* <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
@@ -264,21 +263,21 @@ const SliderHome = (movie) => {
             until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?
           </p>
           <Button
-            style={{
-              textAlign: "center",
-              color: "white",
-              marginLeft: 30,
-              marginTop: 20,
-              fontSize: 10,
-              borderRadius: 20,
+            sx={{
+              marginTop: 5,
+              marginLeft: "30px",
+              width: "25ch",
+              borderRadius: "20px",
+              fontSize: 15,
             }}
-            type={"primary"}
-            danger
-            icon={<PlayCircleOutlined />}
+            variant="contained"
+            size="small"
             onClick={handleOpen}
           >
+            <PlayCircleOutlined style={{ marginRight: "5px" }} />
             WATCH TRAILER
           </Button>
+
           {/* <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
