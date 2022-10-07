@@ -21,10 +21,10 @@ function MenuBar(props) {
               <h1 className="logopage">Movielist</h1>
             </StyledLink>
           </Grid>
-          <Grid item xs={8} style={{ justifyContent: "center", textAlign: "center" }}>
+          <Grid item xs={6} style={{ justifyContent: "center", textAlign: "center" }}>
             <SearchMovie />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4}>
             <Stack spacing={2} direction="row" className="users">
               <StyledLink to="login">
                 <Tooltip title="Sign In">
