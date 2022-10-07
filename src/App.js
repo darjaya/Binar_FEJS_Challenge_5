@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import "antd/dist/antd.less";
+import "antd/dist/antd.css";
 import "slick-carousel/slick/slick.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick-theme.css";
