@@ -51,6 +51,15 @@ export default function Register() {
             autoComplete="off"
           >
             <TextField id="standard-password-input" label="Password" type="password" variant="standard" />
+          </Box>
+          <Box
+            component="form"
+            sx={{
+              "& .MuiTextField-root": { mt: 2, width: "40ch" },
+            }}
+            noValidate
+            autoComplete="off"
+          >
             <TextField id="standard-password-input" label="Confirmation Password" type="password" variant="standard" />
           </Box>
           <Link to="/login" style={{ textDecoration: "none" }}>
