@@ -23,6 +23,22 @@ const SliderHome = (movie) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const [open2, setOpen2] = useState(false);
+  const handleOpen2 = () => setOpen2(true);
+  const handleClose2 = () => setOpen2(false);
+
+  const [open3, setOpen3] = useState(false);
+  const handleOpen3 = () => setOpen3(true);
+  const handleClose3 = () => setOpen3(false);
+
+  const [open4, setOpen4] = useState(false);
+  const handleOpen4 = () => setOpen4(true);
+  const handleClose4 = () => setOpen4(false);
+
+  const [open5, setOpen5] = useState(false);
+  const handleOpen5 = () => setOpen5(true);
+  const handleClose5 = () => setOpen5(false);
+
   const settings = {
     className: "center",
     infinite: true,
@@ -34,7 +50,6 @@ const SliderHome = (movie) => {
   return (
     <div>
       <Slider style={{ width: "100%" }} {...settings}>
-        {/* <Carousel afterChange={onChange}> */}
         <div className="slider1">
           <MenuBar />
           <h1 className="title">
@@ -78,8 +93,8 @@ const SliderHome = (movie) => {
             <Fade in={open}>
               <Box sx={style} id="slide1">
                 <iframe
-                  width="800"
-                  height="500"
+                  width="900"
+                  height="550"
                   src="https://www.youtube.com/embed/aWzlQ2N6qqg"
                   title="YouTube video player"
                   frameborder="0"
@@ -110,29 +125,29 @@ const SliderHome = (movie) => {
             }}
             variant="contained"
             size="small"
-            onClick={handleOpen}
+            onClick={handleOpen2}
           >
             <PlayCircleOutlined style={{ marginRight: "5px" }} />
             WATCH TRAILER
           </Button>
 
-          {/* <Modal
+          <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
-            open={open}
-            onClose={handleClose}
+            open={open2}
+            onClose={handleClose2}
             closeAfterTransition
             BackdropComponent={Backdrop}
             BackdropProps={{
               timeout: 500,
             }}
           >
-            <Fade in={open}>
+            <Fade in={open2}>
               <Box sx={style}>
                 <iframe
-                  width="601"
-                  height="351"
-                  src="https://youtu.be/m9EX0f6V11Y"
+                  width="900"
+                  height="550"
+                  src="https://www.youtube.com/embed/D7eFpRf4tac"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -140,7 +155,7 @@ const SliderHome = (movie) => {
                 ></iframe>
               </Box>
             </Fade>
-          </Modal> */}
+          </Modal>
         </div>
 
         <div className="slider3">
@@ -165,28 +180,28 @@ const SliderHome = (movie) => {
             }}
             variant="contained"
             size="small"
-            onClick={handleOpen}
+            onClick={handleOpen3}
           >
             <PlayCircleOutlined style={{ marginRight: "5px" }} />
             WATCH TRAILER
           </Button>
 
-          {/* <Modal
+          <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
-            open={open}
-            onClose={handleClose}
+            open={open3}
+            onClose={handleClose3}
             closeAfterTransition
             BackdropComponent={Backdrop}
             BackdropProps={{
               timeout: 500,
             }}
           >
-            <Fade in={open}>
+            <Fade in={open3}>
               <Box sx={style}>
                 <iframe
-                  width="600"
-                  height="350"
+                  width="900"
+                  height="550"
                   src="https://www.youtube.com/embed/6DxjJzmYsXo"
                   title="YouTube video player"
                   frameborder="0"
@@ -195,7 +210,7 @@ const SliderHome = (movie) => {
                 ></iframe>
               </Box>
             </Fade>
-          </Modal> */}
+          </Modal>
         </div>
 
         <div className="slider4">
@@ -219,28 +234,28 @@ const SliderHome = (movie) => {
             }}
             variant="contained"
             size="small"
-            onClick={handleOpen}
+            onClick={handleOpen4}
           >
             <PlayCircleOutlined style={{ marginRight: "5px" }} />
             WATCH TRAILER
           </Button>
 
-          {/* <Modal
+          <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
-            open={open}
-            onClose={handleClose}
+            open={open4}
+            onClose={handleClose4}
             closeAfterTransition
             BackdropComponent={Backdrop}
             BackdropProps={{
               timeout: 500,
             }}
           >
-            <Fade in={open}>
+            <Fade in={open4}>
               <Box sx={style}>
                 <iframe
-                  width="600"
-                  height="350"
+                  width="900"
+                  height="550"
                   src="https://www.youtube.com/embed/DotnJ7tTA34"
                   title="YouTube video player"
                   frameborder="0"
@@ -249,7 +264,7 @@ const SliderHome = (movie) => {
                 ></iframe>
               </Box>
             </Fade>
-          </Modal> */}
+          </Modal>
         </div>
 
         <div className="slider5">
@@ -272,28 +287,28 @@ const SliderHome = (movie) => {
             }}
             variant="contained"
             size="small"
-            onClick={handleOpen}
+            onClick={handleOpen5}
           >
             <PlayCircleOutlined style={{ marginRight: "5px" }} />
             WATCH TRAILER
           </Button>
 
-          {/* <Modal
+          <Modal
             aria-labelledby="transition-modal-title"
             aria-describedby="transition-modal-description"
-            open={open}
-            onClose={handleClose}
+            open={open5}
+            onClose={handleClose5}
             closeAfterTransition
             BackdropComponent={Backdrop}
             BackdropProps={{
               timeout: 500,
             }}
           >
-            <Fade in={open}>
+            <Fade in={open5}>
               <Box sx={style}>
                 <iframe
-                  width="600"
-                  height="350"
+                  width="900"
+                  height="550"
                   src="https://www.youtube.com/embed/m9EX0f6V11Y"
                   title="YouTube video player"
                   frameborder="0"
@@ -302,9 +317,8 @@ const SliderHome = (movie) => {
                 ></iframe>
               </Box>
             </Fade>
-          </Modal> */}
+          </Modal>
         </div>
-        {/* </Carousel> */}
       </Slider>
     </div>
   );
