@@ -1,6 +1,6 @@
 ## KM Studi Independen Binar Academy FEJS | Challenge Chapter 5
 
-Preview [Binar Web Movie](https://binar-fejs-challenge-5.vercel.app).
+Preview [Binar Web Movie](https://binar-fejs-challenge-6.vercel.app).
 
 ## Support | Thank's For
 1. [Github](https://github.com/)
