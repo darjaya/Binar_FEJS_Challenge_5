@@ -5,7 +5,7 @@ import { Box, Modal } from "@mui/material";
 import { Col, Row } from "react-bootstrap";
 import Button from "@mui/material/Button";
 import { PlayCircleOutlined } from "@ant-design/icons";
-import Genres from "../Movie/Genres";
+import Genres from "../Core/Genres";
 
 import Backdrop from "@mui/material/Backdrop";
 import Fade from "@mui/material/Fade";
