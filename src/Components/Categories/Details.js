@@ -15,7 +15,7 @@ export default function Details() {
   const [detailMovie, setDetailMovie] = useState([]);
   const params = useParams();
 
-	@@ -29,26 +65,26 @@ export default function Details() {
+export default function Details() {
   return (
     <div>
       <div>
@@ -42,7 +42,7 @@ export default function Details() {
             <h1 style={{ margin: 15, fontWeight: "bold" }}>{detailMovie.title || detailMovie.name} </h1>
             <p style={{ margin: 15 }}>
               {detailMovie.status}
-	@@ -63,24 +99,57 @@ export default function Details() {
+	
             <h5 style={{ margin: 15, fontWeight: "bold" }}>
               Production Companies: <span style={{ color: "gray" }}> {detailMovie?.production_companies?.map((e) => e.name).join(", ")}</span>
             </h5>
