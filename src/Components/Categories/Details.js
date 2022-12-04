@@ -8,14 +8,13 @@ import Button from "@mui/material/Button";
 import { PlayCircleOutlined } from "@ant-design/icons";
 import Genres from "../Core/Genres";
 
-export default function Details() {
+function Details() {
   const getBg = (Bgpath) => {
     return `https://www.themoviedb.org/t/p/original${Bgpath}`;
   };
   const [detailMovie, setDetailMovie] = useState([]);
   const params = useParams();
 
-export default function Details() {
   return (
     <div>
       <div>
@@ -40,13 +39,10 @@ export default function Details() {
           </Col>
           <Col>
             <h1 style={{ margin: 15, fontWeight: "bold" }}>{detailMovie.title || detailMovie.name} </h1>
-            <p style={{ margin: 15 }}>
-              {detailMovie.status}
-	
+            <p style={{ margin: 15 }}>{detailMovie.status}</p>
             <h5 style={{ margin: 15, fontWeight: "bold" }}>
               Production Companies: <span style={{ color: "gray" }}> {detailMovie?.production_companies?.map((e) => e.name).join(", ")}</span>
             </h5>
-
             <Button
               sx={{
                 marginTop: 5,
@@ -67,3 +63,5 @@ export default function Details() {
     </div>
   );
 }
+
+export default Details;
