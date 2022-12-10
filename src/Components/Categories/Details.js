@@ -9,6 +9,9 @@ import { PlayCircleOutlined } from "@ant-design/icons";
 import Genres from "../Core/Genres";
 
 function Details() {
+  const getPoster = (posterpath) => {
+    return `https://www.themoviedb.org/t/p/original${posterpath}`;
+  };
   const getBg = (Bgpath) => {
     return `https://www.themoviedb.org/t/p/original${Bgpath}`;
   };
